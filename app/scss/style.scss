@@ -1,0 +1,399 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+
+// ------ Header ------
+
+
+
+.header__wrapper {
+    display        : flex;
+    justify-content: space-between;
+    height         : 29px;
+}
+
+.header__top-left {
+    display        : flex;
+    justify-content: space-around;
+}
+
+.header__top-right {
+    display: flex;
+}
+
+.menu__burger {
+    cursor: pointer;
+}
+
+.menu__burger-btn {
+    width     : 60px;
+    height    : 2px;
+    background: $nav-color;
+    margin-top: 13px;
+}
+
+.menu__burger-btn::before,
+.menu__burger-btn::after {
+    content   : "";
+    width     : 60px;
+    height    : 2px;
+    background: $nav-color;
+    position  : absolute;
+}
+
+.menu__burger-btn::before {
+    transform: translateY(-7px);
+}
+
+.menu__burger-btn::after {
+    transform: translateY(7px);
+}
+
+ul:first-child {
+    margin-left: 59px;
+}
+
+.menu__list {
+    margin-top: 5px;
+}
+
+.menu__list-item {
+    display: inline-block;
+}
+
+.menu__list-item+.menu__list-item {
+    margin-left: 40px;
+}
+
+.menu__list-link {
+    color      : $nav-color;
+    font-family: "MADE Outer Sans";
+    font-style : normal;
+    font-weight: bold;
+    font-size  : 14px;
+    line-height: 18px;
+}
+
+.menu__list-item :after,
+.menu__list-item :before {
+    backface-visibility: hidden;
+    border             : 1px solid rgba(rgb(255, 0, 0), 0);
+    bottom             : 0px;
+    content            : " ";
+    display            : block;
+    margin             : 0 auto;
+    position           : relative;
+    transition         : all 280ms ease-in-out;
+    width              : 0;
+}
+
+.menu__list-item :hover:after,
+.menu__list-item :hover:before {
+    backface-visibility: hidden;
+    border-color       : rgb(255, 0, 0);
+    transition         : width 350ms ease-in-out;
+    width              : 70%;
+}
+
+.menu__list-item :hover:before {
+    bottom: auto;
+    top   : 0;
+    width : 70%;
+}
+
+
+
+.header__logo {
+    width : 200px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header__phone {
+    margin-top  : 3px;
+    font-family : "MADE Outer Sans";
+    font-style  : normal;
+    font-weight : bold;
+    font-size   : 14px;
+    line-height : 18px;
+    margin-right: 62.33px;
+    color       : $nav-color;
+}
+
+
+.header__languages {
+    display   : flex;
+    margin-top: 3px;
+}
+
+
+.header__shopingbag-group {
+    margin-right: 62.33px;
+}
+
+.header__shopingbag-circle {
+    position   : absolute;
+    margin-left: -10px;
+    margin-top : -12px;
+}
+
+.header__shopingbag-number {
+    position   : absolute;
+    margin-left: -19px;
+    margin-top : 3px;
+    color      : $baseRed-color;
+    font-family: "MADE Outer Sans";
+    font-style : normal;
+    font-weight: bold;
+    font-size  : 12px;
+    line-height: 15px;
+}
+
+.header__languages-de {
+    color       : $nav-color;
+    margin-right: 10px;
+    font-family : "MADE Outer Sans";
+    font-style  : normal;
+    font-weight : bold;
+    font-size   : 14px;
+    line-height : 18px;
+    cursor      : pointer;
+}
+
+.languages-de-button_active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.header__languages-en {
+    color      : $nav-color;
+    font-family: "MADE Outer Sans";
+    font-style : normal;
+    font-weight: bold;
+    font-size  : 14px;
+    line-height: 18px;
+    cursor     : pointer;
+}
+
+
+
+
+// ------ section poster -------
+
+
+
+.poster__wrapper {
+    display        : flex;
+    justify-content: space-around;
+}
+
+.poster__item-one {
+    min-width        : 330px;
+    width            : 351.57px;
+    height           : 801.07px;
+    background-image : url(/images/im/Cards/Room/Default-1.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    margin           : 0 5px 5px;
+    position         : relative;
+    border           : solid 1px;
+}
+
+.poster__item-one:hover {
+    border-image      : linear-gradient(#ff0000, #ff000013);
+    border-image-slice: 1;
+
+}
+
+.poster__item-two {
+    min-width        : 330px;
+    width            : 351.57px;
+    height           : 801.07px;
+    background-image : url(/images/im/Cards/Room/Default-2.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    margin           : 0 5px 5px;
+    position         : relative;
+    border           : solid 1px;
+}
+
+.poster__item-two:hover {
+    border-image      : linear-gradient(#ff0000, #ff000013);
+    border-image-slice: 1;
+
+}
+
+.poster__item-three {
+    min-width        : 330px;
+    width            : 351.57px;
+    height           : 801.07px;
+    background-image : url(/images/im/Cards/Room/Default.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    margin           : 0 5px 5px;
+    position         : relative;
+    border           : solid 1px;
+}
+
+.poster__item-three:hover {
+    border-image      : linear-gradient(#ff0000, #ff000013);
+    border-image-slice: 1;
+    transition        : .3s ease-in-out;
+}
+
+
+.poster__item-four {
+    min-width        : 330px;
+    width            : 351.57px;
+    height           : 801.07px;
+    background-image : url(/images/im/Cards/Room/Default-4.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    margin           : 0 5px 5px;
+    position         : relative;
+    border           : solid 1px;
+}
+
+.poster__item-four:hover {
+    border-image      : linear-gradient(#ff0000, #ff000013);
+    border-image-slice: 1;
+
+}
+
+.poster__item-five {
+    min-width        : 330px;
+    width            : 351.57px;
+    height           : 801.07px;
+    background-image : url(/images/im/Cards/Room/Default-3.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    margin           : 0 5px 5px;
+    position         : relative;
+    border           : solid 1px;
+}
+
+.poster__item-five:hover {
+    border-image      : linear-gradient(#ff0000, #ff000013);
+    border-image-slice: 1;
+
+}
+
+.offer-one {
+    position  : absolute;
+    right     : 0;
+    margin-top: -10px;
+}
+
+.offer-two {
+    margin-top: 57.44px;
+    width     : 100%;
+    background: #E50012;
+    transform : rotate(-5deg) skew(-4deg);
+    height    : 48.38px;
+    text-align: center;
+}
+
+.offer-text {
+    font-family: "MADE Outer Sans";
+    font-style : normal;
+    font-weight: bold;
+    font-size  : 18px;
+    line-height: 23px;
+    color      : #F7F5F9;
+    padding-top: 12.64px;
+}
+
+.offer-three {
+    margin-top : 29.38px;
+    width      : 103%;
+    margin-left: -5px;
+    position   : relative;
+}
+
+.offer-deal {
+    font-family   : "Morganite";
+    font-style    : normal;
+    font-weight   : bold;
+    font-size     : 56px;
+    line-height   : 56px;
+    text-transform: uppercase;
+    color         : #F7F5F9;
+    position      : absolute;
+    margin-top    : -77px;
+    margin-left   : 10px;
+}
+
+.time-deal {
+    font-family : "MADE Outer Sanss";
+    font-style  : normal;
+    font-size   : 14px;
+    line-height : 24px;
+    color       : #F7F5F9;
+    position    : absolute;
+    margin-top  : -70px;
+    margin-right: 20px;
+    right       : 0;
+}
+
+.timer-deal {
+    font-family : "MADE Outer Sans";
+    font-style  : normal;
+    font-weight : 900;
+    font-size   : 18px;
+    line-height : 23px;
+    color       : #F7F5F9;
+    position    : absolute;
+    margin-top  : -46px;
+    margin-right: 20px;
+    right       : 0;
+}
+
+.offer-four {
+    margin-top: -4.61px;
+}
+
+.poster__item-group {
+    position    : absolute;
+    bottom      : 50.16px;
+    padding-left: 60.27px;
+}
+
+.title-restyle {
+    bottom  : 60.16px;
+    position: absolute;
+    width   : 246px;
+}
+
+.poster__item-title {
+    color      : $nav-color;
+    font-family: "MADE Outer Sans";
+    font-style : normal;
+    font-weight: bold;
+    font-size  : 36px;
+    line-height: 36px;
+    box-sizing : border-box;
+}
+
+.poster__item-subtitle {
+    font-family: "MADE Outer Sanss";
+    font-style : normal;
+    font-weight: thin;
+    font-weight: 250;
+    font-size  : 14px;
+    line-height: 24px;
+    color      : $nav-color;
+    width      : 196.73px;
+}
+
+.poster__item-elements {
+    display: flex;
+}
+
+.poster__item-icon {
+    position: absolute;
+    right   : 0;
+}
+
+
+@import "media";

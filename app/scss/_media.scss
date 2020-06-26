@@ -1,0 +1,156 @@
+@media (max-width: 1550px) {
+
+    // -------- section poster media --------
+
+    .poster__wrapper {
+        flex-wrap: wrap;
+
+    }
+}
+
+@media (max-width: 1221px) {
+
+    // -------- section poster media --------
+  
+
+    .poster__item-one {
+        width: 450px;
+    }
+
+    .poster__item-two {
+        width: 450px;
+    }
+
+    .poster__item-three {
+        width: 450px;
+    }
+
+    .poster__item-four {
+        width: 450px;
+    }
+
+    .poster__item-five {
+        width: 450px;
+    }
+
+}
+
+
+
+@media (max-width: 1140px) {
+
+    // -------- Header section media --------
+
+
+    ul:first-child {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    // -------- Header section media --------
+
+
+    .menu__list {
+        display: none;
+    }
+}
+
+
+@media (max-width: 775px) {
+
+    // -------- Header section media --------
+
+
+    .header__phone {
+        margin-right: 20px;
+    }
+
+    .header__shopingbag-group {
+        margin-right: 20px;
+    }
+
+    .header__logo {
+        position   : absolute;
+        margin-top : -40px;
+        margin-left: 80px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    // -------- Header section media --------
+
+
+    .header__phone {
+        margin-right: 20px;
+    }
+
+    .header__shopingbag-group {
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    // -------- Header section media --------
+
+
+    .header__logo {
+        margin-left: -45px;
+        margin-top : -35px;
+    }
+
+    .header__shopingbag-group {
+        position   : absolute;
+        margin-left: 95px;
+        margin-top : -35px;
+    }
+
+    .header__languages {
+        position   : absolute;
+        margin-top : -30px;
+        margin-left: 160px;
+    }
+
+    .menu__burger {
+        margin-top: 20px;
+    }
+
+    .header__phone {
+        margin-top: 25px;
+    }
+
+
+
+    // -------- section poster media --------
+
+    .poster__item-one {
+        height   : 500px;
+        min-width: 350px;
+    }
+
+    .poster__item-two {
+        height   : 500px;
+        min-width: 350px;
+    }
+
+    .poster__item-three {
+        height   : 500px;
+        min-width: 350px;
+    }
+
+    .poster__item-four {
+        height   : 500px;
+        min-width: 350px;
+    }
+
+    .poster__item-five {
+        height   : 500px;
+        min-width: 350px;
+    }
+
+}
